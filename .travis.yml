@@ -1,0 +1,11 @@
+
+osx_image: xcode9.2
+language: objective-c
+# cache: cocoapods
+# podfile: Example/Podfile
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod install --project-directory=Example
+script:
+- carthage update
+- set -o pipefail && xcodebuild -project "midimittr.xcodeproj" -target "midimittr" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO

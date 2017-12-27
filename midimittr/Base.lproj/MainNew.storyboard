@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i92-3K-T0V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MIDI Ports-->
+        <scene sceneID="r9S-l6-47b">
+            <objects>
+                <viewController title="MIDI Ports" id="flV-yf-Qko" customClass="MIDIPortsViewController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IdI-e4-nYr"/>
+                        <viewControllerLayoutGuide type="bottom" id="QYX-Db-y9a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9WE-h3-szG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-0T-Fum">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="55" id="VB4-th-C6P" customClass="MIDIPortTableCell" customModule="midimittr">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VB4-th-C6P" id="mDm-hr-MeS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b6z-Bt-zFW">
+                                                    <rect key="frame" x="312" y="11" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="didChangeValue:" destination="VB4-th-C6P" eventType="valueChanged" id="YbF-xf-O5A"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b6z-Bt-zFW" firstAttribute="top" secondItem="mDm-hr-MeS" secondAttribute="topMargin" id="8NN-LV-gPA"/>
+                                                <constraint firstItem="b6z-Bt-zFW" firstAttribute="centerY" secondItem="mDm-hr-MeS" secondAttribute="centerY" id="Fcb-vN-M9N"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="b6z-Bt-zFW" secondAttribute="trailing" constant="-1" id="oD7-Mt-2F9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="midiSwitch" destination="b6z-Bt-zFW" id="ZUw-Nu-oO9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yc5-0T-Fum" firstAttribute="leading" secondItem="9WE-h3-szG" secondAttribute="leading" id="AfG-lL-mjY"/>
+                            <constraint firstItem="QYX-Db-y9a" firstAttribute="top" secondItem="yc5-0T-Fum" secondAttribute="bottom" id="DYo-kY-Vaa"/>
+                            <constraint firstItem="yc5-0T-Fum" firstAttribute="top" secondItem="9WE-h3-szG" secondAttribute="top" id="Wy9-fU-6HV"/>
+                            <constraint firstAttribute="trailing" secondItem="yc5-0T-Fum" secondAttribute="trailing" id="sUK-5V-R5W"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MIDI Ports" image="midiIcon" id="btR-LQ-gah"/>
+                    <navigationItem key="navigationItem" id="pNQ-I5-b96"/>
+                    <connections>
+                        <outlet property="midiPortsTable" destination="yc5-0T-Fum" id="5j7-er-0BI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PUt-8h-iWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="-512.29385307346331"/>
+        </scene>
+        <!--USB-->
+        <scene sceneID="T3l-XV-6Gu">
+            <objects>
+                <tableViewController title="USB" id="yW8-I1-YvJ" customClass="USBConnectionTableViewController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3ad-Gf-ikg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="15" reuseIdentifier="USB" id="Q0e-bc-zMU">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q0e-bc-zMU" id="bti-Ei-jTi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="yW8-I1-YvJ" id="dX7-9Z-6PH"/>
+                            <outlet property="delegate" destination="yW8-I1-YvJ" id="kbu-Jt-PRY"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="USB" image="usbIcon" id="YWX-m0-shb"/>
+                    <connections>
+                        <outlet property="tableView" destination="3ad-Gf-ikg" id="2Sv-i7-arw"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPl-OQ-PI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="211"/>
+        </scene>
+        <!--Clients-->
+        <scene sceneID="LZN-sv-46U">
+            <objects>
+                <viewController title="Clients" id="Avj-NE-ew5" customClass="BLEClientViewController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8e5-9K-1Ar"/>
+                        <viewControllerLayoutGuide type="bottom" id="ngx-ve-gf9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fGQ-N4-hKL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Devices" image="midiKeyBlue" id="jtm-HZ-unA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cxi-Ku-FIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-104" y="269"/>
+        </scene>
+        <!--Advertising-->
+        <scene sceneID="Q3q-2Y-tpF">
+            <objects>
+                <viewController title="Advertising" id="MGW-dE-Ylo" customClass="BLEAdvertViewController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RUh-Km-0aY"/>
+                        <viewControllerLayoutGuide type="bottom" id="brl-cJ-ULG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sJ4-Uw-Hau">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Advertise" image="bluetoothImage" id="PrG-3U-HX8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4X-Nt-XkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="241"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="4jt-q8-XYA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i92-3K-T0V" customClass="NavController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="hAL-PS-srS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jTq-Sk-ooX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="k4S-eR-vsv" kind="relationship" relationship="rootViewController" id="cQC-I6-WzY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="34P-th-uca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="-535"/>
+        </scene>
+        <!--midimittr-->
+        <scene sceneID="rXW-C9-syF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="k4S-eR-vsv" customClass="TabController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="midimittr" id="0lg-s3-uP9"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wc4-kx-yRs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="flV-yf-Qko" kind="relationship" relationship="viewControllers" id="nxf-lH-TYz"/>
+                        <segue destination="MGW-dE-Ylo" kind="relationship" relationship="viewControllers" id="Pwo-04-aM6"/>
+                        <segue destination="Avj-NE-ew5" kind="relationship" relationship="viewControllers" id="nlr-U8-QJN"/>
+                        <segue destination="yW8-I1-YvJ" kind="relationship" relationship="viewControllers" id="JJC-kj-t5w"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zt4-yk-hiu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175" y="-555"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bluetoothImage" width="20" height="20"/>
+        <image name="midiIcon" width="20" height="20"/>
+        <image name="midiKeyBlue" width="20" height="20"/>
+        <image name="usbIcon" width="20" height="20"/>
+    </resources>
+</document>

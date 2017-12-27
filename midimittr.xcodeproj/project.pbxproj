@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		693D9EAE1FF424B9005E899C /* MainNew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693D9EAC1FF424B9005E899C /* MainNew.storyboard */; };
+		693D9EB01FF425EF005E899C /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EAF1FF425EF005E899C /* NavController.swift */; };
+		693D9EB31FF4267F005E899C /* PeerTalkBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EB21FF4267F005E899C /* PeerTalkBridge.m */; };
+		693D9EB51FF42D35005E899C /* MIDIPortsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EB41FF42D35005E899C /* MIDIPortsViewController.swift */; };
+		693D9EB71FF43E10005E899C /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EB61FF43E10005E899C /* TabController.swift */; };
+		693D9EB91FF443EA005E899C /* BLEAdvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EB81FF443EA005E899C /* BLEAdvertViewController.swift */; };
+		693D9EBB1FF446B4005E899C /* BLEClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EBA1FF446B4005E899C /* BLEClientViewController.swift */; };
+		694947F019DD7A4E00A6E65C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694947EF19DD7A4E00A6E65C /* Images.xcassets */; };
+		694947F319DD7A4E00A6E65C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694947F119DD7A4E00A6E65C /* LaunchScreen.xib */; };
+		6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480819DD7A8900A6E65C /* CoreAudio.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480E19DD804200A6E65C /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955AA321FF8076500224667 /* Peertalk.framework */; };
+		699BDC641FF54BA200C7057D /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */; };
+		699BDC651FF54BA200C7057D /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC631FF54BA200C7057D /* MarqueeLabel.framework */; };
+		699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC661FF54BF800C7057D /* NotificationBanner.framework */; };
+		699BDC691FF54BF800C7057D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC671FF54BF800C7057D /* SnapKit.framework */; };
+		699BDC6E1FF55D7E00C7057D /* MIDIPortTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699BDC6D1FF55D7E00C7057D /* MIDIPortTableCell.swift */; };
+		69A79E831FF64FE100A367A4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69A79E821FF64FE100A367A4 /* Settings.bundle */; };
+		69A79E891FF6686B00A367A4 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A79E881FF6686B00A367A4 /* AppContext.swift */; };
+		69A79E911FF66DA100A367A4 /* USBConnectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A79E901FF66DA100A367A4 /* USBConnectionTableViewController.swift */; };
+		69AC2C0F19E015D100212353 /* MIDIController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69AC2C0E19E015D100212353 /* MIDIController.mm */; };
+		69B8BA0819DD85F000AB03A2 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69B8BA0319DD85F000AB03A2 /* PGMidi.mm */; };
+		69B8BA0919DD85F000AB03A2 /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69B8BA0519DD85F000AB03A2 /* PGMidiAllSources.mm */; };
+		69B8BA0A19DD85F000AB03A2 /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69B8BA0719DD85F000AB03A2 /* PGMidiFind.mm */; };
+		69B8BA0D19DD8FEF00AB03A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		69B8BA0E19DD8FEF00AB03A2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		69B8BA1019DD99C900AB03A2 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69B8BA0F19DD99C900AB03A2 /* silence.mp3 */; };
+		69E7A6EA1FF40FD40083EBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		693D9EAD1FF424B9005E899C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainNew.storyboard; sourceTree = "<group>"; };
+		693D9EAF1FF425EF005E899C /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		693D9EB11FF4267F005E899C /* PeerTalkBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerTalkBridge.h; sourceTree = "<group>"; };
+		693D9EB21FF4267F005E899C /* PeerTalkBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeerTalkBridge.m; sourceTree = "<group>"; };
+		693D9EB41FF42D35005E899C /* MIDIPortsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIPortsViewController.swift; sourceTree = "<group>"; };
+		693D9EB61FF43E10005E899C /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		693D9EB81FF443EA005E899C /* BLEAdvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEAdvertViewController.swift; sourceTree = "<group>"; };
+		693D9EBA1FF446B4005E899C /* BLEClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEClientViewController.swift; sourceTree = "<group>"; };
+		694947DC19DD7A4E00A6E65C /* midimittr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = midimittr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		694947E019DD7A4E00A6E65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694947EF19DD7A4E00A6E65C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		694947F219DD7A4E00A6E65C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		694947FD19DD7A4E00A6E65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694947FE19DD7A4E00A6E65C /* MIDI_LETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MIDI_LETests.m; sourceTree = "<group>"; };
+		6949480819DD7A8900A6E65C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6949480E19DD804200A6E65C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		6955AA321FF8076500224667 /* Peertalk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Peertalk.framework; path = Carthage/Build/iOS/Peertalk.framework; sourceTree = "<group>"; };
+		699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabelSwift.framework; path = Carthage/Build/iOS/MarqueeLabelSwift.framework; sourceTree = "<group>"; };
+		699BDC631FF54BA200C7057D /* MarqueeLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabel.framework; path = Carthage/Build/iOS/MarqueeLabel.framework; sourceTree = "<group>"; };
+		699BDC661FF54BF800C7057D /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Carthage/Build/iOS/NotificationBanner.framework; sourceTree = "<group>"; };
+		699BDC671FF54BF800C7057D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		699BDC6D1FF55D7E00C7057D /* MIDIPortTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIPortTableCell.swift; sourceTree = "<group>"; };
+		69A79E821FF64FE100A367A4 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		69A79E881FF6686B00A367A4 /* AppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContext.swift; sourceTree = "<group>"; };
+		69A79E901FF66DA100A367A4 /* USBConnectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBConnectionTableViewController.swift; sourceTree = "<group>"; };
+		69AC2C0D19E015D100212353 /* MIDIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIController.h; sourceTree = "<group>"; };
+		69AC2C0E19E015D100212353 /* MIDIController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MIDIController.mm; sourceTree = "<group>"; };
+		69B8BA0019DD85F000AB03A2 /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
+		69B8BA0119DD85F000AB03A2 /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		69B8BA0219DD85F000AB03A2 /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		69B8BA0319DD85F000AB03A2 /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		69B8BA0419DD85F000AB03A2 /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		69B8BA0519DD85F000AB03A2 /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		69B8BA0619DD85F000AB03A2 /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		69B8BA0719DD85F000AB03A2 /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		69B8BA0F19DD99C900AB03A2 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		69CC1D7E1A7B8C4F0054097D /* PTMidimittrProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMidimittrProtocol.h; sourceTree = "<group>"; };
+		69E7A6E81FF40FD30083EBEE /* midimittr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "midimittr-Bridging-Header.h"; sourceTree = "<group>"; };
+		69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		694947D919DD7A4E00A6E65C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */,
+				699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */,
+				699BDC691FF54BF800C7057D /* SnapKit.framework in Frameworks */,
+				699BDC641FF54BA200C7057D /* MarqueeLabelSwift.framework in Frameworks */,
+				699BDC651FF54BA200C7057D /* MarqueeLabel.framework in Frameworks */,
+				69B8BA0E19DD8FEF00AB03A2 /* AVKit.framework in Frameworks */,
+				69B8BA0D19DD8FEF00AB03A2 /* AVFoundation.framework in Frameworks */,
+				6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */,
+				6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */,
+				6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		694947D319DD7A4E00A6E65C = {
+			isa = PBXGroup;
+			children = (
+				69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */,
+				69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */,
+				6949480E19DD804200A6E65C /* CoreMIDI.framework */,
+				6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */,
+				6949480819DD7A8900A6E65C /* CoreAudio.framework */,
+				694947DE19DD7A4E00A6E65C /* midimittr */,
+				694947FB19DD7A4E00A6E65C /* midimittrTests */,
+				694947DD19DD7A4E00A6E65C /* Products */,
+				699BDC611FF54BA100C7057D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		694947DD19DD7A4E00A6E65C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				694947DC19DD7A4E00A6E65C /* midimittr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		694947DE19DD7A4E00A6E65C /* midimittr */ = {
+			isa = PBXGroup;
+			children = (
+				69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */,
+				69A79E881FF6686B00A367A4 /* AppContext.swift */,
+				693D9EAF1FF425EF005E899C /* NavController.swift */,
+				693D9EB61FF43E10005E899C /* TabController.swift */,
+				693D9EB41FF42D35005E899C /* MIDIPortsViewController.swift */,
+				69A79E901FF66DA100A367A4 /* USBConnectionTableViewController.swift */,
+				69A79E821FF64FE100A367A4 /* Settings.bundle */,
+				699BDC6D1FF55D7E00C7057D /* MIDIPortTableCell.swift */,
+				693D9EB81FF443EA005E899C /* BLEAdvertViewController.swift */,
+				693D9EBA1FF446B4005E899C /* BLEClientViewController.swift */,
+				693D9EB11FF4267F005E899C /* PeerTalkBridge.h */,
+				693D9EB21FF4267F005E899C /* PeerTalkBridge.m */,
+				69AC2C0D19E015D100212353 /* MIDIController.h */,
+				69AC2C0E19E015D100212353 /* MIDIController.mm */,
+				69CC1D7E1A7B8C4F0054097D /* PTMidimittrProtocol.h */,
+				693D9EAC1FF424B9005E899C /* MainNew.storyboard */,
+				694947EF19DD7A4E00A6E65C /* Images.xcassets */,
+				694947F119DD7A4E00A6E65C /* LaunchScreen.xib */,
+				694947DF19DD7A4E00A6E65C /* Supporting Files */,
+				69E7A6E81FF40FD30083EBEE /* midimittr-Bridging-Header.h */,
+			);
+			path = midimittr;
+			sourceTree = "<group>";
+		};
+		694947DF19DD7A4E00A6E65C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69B8BA0F19DD99C900AB03A2 /* silence.mp3 */,
+				69B8B9FF19DD85F000AB03A2 /* PGMidi */,
+				694947E019DD7A4E00A6E65C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		694947FB19DD7A4E00A6E65C /* midimittrTests */ = {
+			isa = PBXGroup;
+			children = (
+				694947FE19DD7A4E00A6E65C /* MIDI_LETests.m */,
+				694947FC19DD7A4E00A6E65C /* Supporting Files */,
+			);
+			path = midimittrTests;
+			sourceTree = "<group>";
+		};
+		694947FC19DD7A4E00A6E65C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				694947FD19DD7A4E00A6E65C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		699BDC611FF54BA100C7057D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6955AA321FF8076500224667 /* Peertalk.framework */,
+				699BDC661FF54BF800C7057D /* NotificationBanner.framework */,
+				699BDC671FF54BF800C7057D /* SnapKit.framework */,
+				699BDC631FF54BA200C7057D /* MarqueeLabel.framework */,
+				699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69B8B9FF19DD85F000AB03A2 /* PGMidi */ = {
+			isa = PBXGroup;
+			children = (
+				69B8BA0019DD85F000AB03A2 /* iOSVersionDetection.h */,
+				69B8BA0119DD85F000AB03A2 /* PGArc.h */,
+				69B8BA0219DD85F000AB03A2 /* PGMidi.h */,
+				69B8BA0319DD85F000AB03A2 /* PGMidi.mm */,
+				69B8BA0419DD85F000AB03A2 /* PGMidiAllSources.h */,
+				69B8BA0519DD85F000AB03A2 /* PGMidiAllSources.mm */,
+				69B8BA0619DD85F000AB03A2 /* PGMidiFind.h */,
+				69B8BA0719DD85F000AB03A2 /* PGMidiFind.mm */,
+			);
+			path = PGMidi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		694947DB19DD7A4E00A6E65C /* midimittr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6949480219DD7A4E00A6E65C /* Build configuration list for PBXNativeTarget "midimittr" */;
+			buildPhases = (
+				694947D819DD7A4E00A6E65C /* Sources */,
+				694947D919DD7A4E00A6E65C /* Frameworks */,
+				694947DA19DD7A4E00A6E65C /* Resources */,
+				699BDC6C1FF54D0300C7057D /* ShellScript */,
+				6955AA381FF83A6C00224667 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = midimittr;
+			productName = "MIDI LE";
+			productReference = 694947DC19DD7A4E00A6E65C /* midimittr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		694947D419DD7A4E00A6E65C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Matthias Frick";
+				TargetAttributes = {
+					694947DB19DD7A4E00A6E65C = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = VEESE9857L;
+						LastSwiftMigration = 0920;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 694947D719DD7A4E00A6E65C /* Build configuration list for PBXProject "midimittr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 694947D319DD7A4E00A6E65C;
+			productRefGroup = 694947DD19DD7A4E00A6E65C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				694947DB19DD7A4E00A6E65C /* midimittr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		694947DA19DD7A4E00A6E65C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693D9EAE1FF424B9005E899C /* MainNew.storyboard in Resources */,
+				69B8BA1019DD99C900AB03A2 /* silence.mp3 in Resources */,
+				69A79E831FF64FE100A367A4 /* Settings.bundle in Resources */,
+				694947F319DD7A4E00A6E65C /* LaunchScreen.xib in Resources */,
+				694947F019DD7A4E00A6E65C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6955AA381FF83A6C00224667 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		699BDC6C1FF54D0300C7057D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabelSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/NotificationBanner.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Peertalk.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		694947D819DD7A4E00A6E65C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				693D9EB31FF4267F005E899C /* PeerTalkBridge.m in Sources */,
+				69A79E891FF6686B00A367A4 /* AppContext.swift in Sources */,
+				69AC2C0F19E015D100212353 /* MIDIController.mm in Sources */,
+				69E7A6EA1FF40FD40083EBEE /* AppDelegate.swift in Sources */,
+				693D9EB51FF42D35005E899C /* MIDIPortsViewController.swift in Sources */,
+				693D9EBB1FF446B4005E899C /* BLEClientViewController.swift in Sources */,
+				699BDC6E1FF55D7E00C7057D /* MIDIPortTableCell.swift in Sources */,
+				69A79E911FF66DA100A367A4 /* USBConnectionTableViewController.swift in Sources */,
+				693D9EB01FF425EF005E899C /* NavController.swift in Sources */,
+				693D9EB91FF443EA005E899C /* BLEAdvertViewController.swift in Sources */,
+				69B8BA0819DD85F000AB03A2 /* PGMidi.mm in Sources */,
+				693D9EB71FF43E10005E899C /* TabController.swift in Sources */,
+				69B8BA0A19DD85F000AB03A2 /* PGMidiFind.mm in Sources */,
+				69B8BA0919DD85F000AB03A2 /* PGMidiAllSources.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		693D9EAC1FF424B9005E899C /* MainNew.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				693D9EAD1FF424B9005E899C /* Base */,
+			);
+			name = MainNew.storyboard;
+			sourceTree = "<group>";
+		};
+		694947F119DD7A4E00A6E65C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694947F219DD7A4E00A6E65C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6949480019DD7A4E00A6E65C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6949480119DD7A4E00A6E65C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = NO;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6949480319DD7A4E00A6E65C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/midimittr/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "midimittr/midimittr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6949480419DD7A4E00A6E65C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/midimittr/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "midimittr/midimittr-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		694947D719DD7A4E00A6E65C /* Build configuration list for PBXProject "midimittr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6949480019DD7A4E00A6E65C /* Debug */,
+				6949480119DD7A4E00A6E65C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6949480219DD7A4E00A6E65C /* Build configuration list for PBXNativeTarget "midimittr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6949480319DD7A4E00A6E65C /* Debug */,
+				6949480419DD7A4E00A6E65C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 694947D419DD7A4E00A6E65C /* Project object */;
+}

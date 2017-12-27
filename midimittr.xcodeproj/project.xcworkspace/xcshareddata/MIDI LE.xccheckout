@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CC326A97-4CA0-47EA-AC77-B96669E08C33</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MIDI LE</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>893F737CC4162111345553068716D60CC62CF8B1</key>
+		<string>ssh://gw.matthewadams.de/home/git/repositories/sierenmusic/midimittr.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MIDI LE/MIDI LE.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>893F737CC4162111345553068716D60CC62CF8B1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://gw.matthewadams.de/home/git/repositories/sierenmusic/midimittr.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>893F737CC4162111345553068716D60CC62CF8B1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>893F737CC4162111345553068716D60CC62CF8B1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>midimittr</string>
+		</dict>
+	</array>
+</dict>
+</plist>
