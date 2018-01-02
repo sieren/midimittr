@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		692A96141FFBAD53002BCBDA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692A96131FFBAD53002BCBDA /* Launch Screen.storyboard */; };
+		692A96161FFBADF7002BCBDA /* startIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 692A96151FFBADF6002BCBDA /* startIcon@2x.png */; };
 		693D9EAE1FF424B9005E899C /* MainNew.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693D9EAC1FF424B9005E899C /* MainNew.storyboard */; };
 		693D9EB01FF425EF005E899C /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EAF1FF425EF005E899C /* NavController.swift */; };
 		693D9EB31FF4267F005E899C /* PeerTalkBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EB21FF4267F005E899C /* PeerTalkBridge.m */; };
@@ -15,7 +17,6 @@
 		693D9EB91FF443EA005E899C /* BLEAdvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EB81FF443EA005E899C /* BLEAdvertViewController.swift */; };
 		693D9EBB1FF446B4005E899C /* BLEClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EBA1FF446B4005E899C /* BLEClientViewController.swift */; };
 		694947F019DD7A4E00A6E65C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694947EF19DD7A4E00A6E65C /* Images.xcassets */; };
-		694947F319DD7A4E00A6E65C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694947F119DD7A4E00A6E65C /* LaunchScreen.xib */; };
 		6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480819DD7A8900A6E65C /* CoreAudio.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480E19DD804200A6E65C /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -39,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		692A96131FFBAD53002BCBDA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		692A96151FFBADF6002BCBDA /* startIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "startIcon@2x.png"; sourceTree = "<group>"; };
 		693D9EAD1FF424B9005E899C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainNew.storyboard; sourceTree = "<group>"; };
 		693D9EAF1FF425EF005E899C /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 		693D9EB11FF4267F005E899C /* PeerTalkBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeerTalkBridge.h; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 		694947DC19DD7A4E00A6E65C /* midimittr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = midimittr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694947E019DD7A4E00A6E65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694947EF19DD7A4E00A6E65C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		694947F219DD7A4E00A6E65C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		694947FD19DD7A4E00A6E65C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694947FE19DD7A4E00A6E65C /* MIDI_LETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MIDI_LETests.m; sourceTree = "<group>"; };
 		6949480819DD7A8900A6E65C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -147,7 +149,7 @@
 				69CC1D7E1A7B8C4F0054097D /* PTMidimittrProtocol.h */,
 				693D9EAC1FF424B9005E899C /* MainNew.storyboard */,
 				694947EF19DD7A4E00A6E65C /* Images.xcassets */,
-				694947F119DD7A4E00A6E65C /* LaunchScreen.xib */,
+				692A96131FFBAD53002BCBDA /* Launch Screen.storyboard */,
 				694947DF19DD7A4E00A6E65C /* Supporting Files */,
 				69E7A6E81FF40FD30083EBEE /* midimittr-Bridging-Header.h */,
 			);
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				69B8BA0F19DD99C900AB03A2 /* silence.mp3 */,
+				692A96151FFBADF6002BCBDA /* startIcon@2x.png */,
 				69B8B9FF19DD85F000AB03A2 /* PGMidi */,
 				694947E019DD7A4E00A6E65C /* Info.plist */,
 			);
@@ -274,10 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692A96161FFBADF7002BCBDA /* startIcon@2x.png in Resources */,
+				692A96141FFBAD53002BCBDA /* Launch Screen.storyboard in Resources */,
 				693D9EAE1FF424B9005E899C /* MainNew.storyboard in Resources */,
 				69B8BA1019DD99C900AB03A2 /* silence.mp3 in Resources */,
 				69A79E831FF64FE100A367A4 /* Settings.bundle in Resources */,
-				694947F319DD7A4E00A6E65C /* LaunchScreen.xib in Resources */,
 				694947F019DD7A4E00A6E65C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,14 +353,6 @@
 				693D9EAD1FF424B9005E899C /* Base */,
 			);
 			name = MainNew.storyboard;
-			sourceTree = "<group>";
-		};
-		694947F119DD7A4E00A6E65C /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				694947F219DD7A4E00A6E65C /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
