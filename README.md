@@ -37,7 +37,15 @@ Ensure `swiftlint` is installed (`brew install swiftlint`) to ensure Swift style
 
 I'd love to know anything that you think midimittr is missing. Open an issue and I'll add the `feature request` label to it and I'll do everything I can to accomodate that request.
 
+## Donation
 
+midimittr is developed in my spare time and requires a yearly app-store subscription (99$). If this project helps you in any way, consider a small donation :)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=WC74EF774344J&lc=US&item_name=midimittr&no_note=0&no_shipping=1&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedJ)
+
+## Arduino, Desktop and FAQ
+
+Further information about midimittr and Bluetooth over MIDI as well as other projects like Bluetooth over MIDI on certain Arduino boards can be found [here](http://www.s-r-n.de/midimittr).
 ## License
 
 midimittr is available under the Apache 2.0 license. See the LICENSE file for more info.
