@@ -16,6 +16,8 @@ midimittr is a lightweight iOS utility to initiate MIDI over Bluetooth LE or USB
 - iPhone, iPhone X, & iPad Support ✅
 - Remember previous routing settings✅
 
+[![app store](https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg)](https://itunes.apple.com/us/app/midimittr/id925495245?mt=8)
+
 ## Requirements
 
  - iOS 9.0+
