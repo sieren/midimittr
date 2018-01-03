@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-0T-Fum">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -58,7 +58,7 @@
                         <constraints>
                             <constraint firstItem="yc5-0T-Fum" firstAttribute="leading" secondItem="9WE-h3-szG" secondAttribute="leading" id="AfG-lL-mjY"/>
                             <constraint firstItem="QYX-Db-y9a" firstAttribute="top" secondItem="yc5-0T-Fum" secondAttribute="bottom" id="DYo-kY-Vaa"/>
-                            <constraint firstItem="yc5-0T-Fum" firstAttribute="top" secondItem="9WE-h3-szG" secondAttribute="top" id="Wy9-fU-6HV"/>
+                            <constraint firstItem="yc5-0T-Fum" firstAttribute="top" secondItem="9WE-h3-szG" secondAttribute="top" constant="64" id="Wy9-fU-6HV"/>
                             <constraint firstAttribute="trailing" secondItem="yc5-0T-Fum" secondAttribute="trailing" id="sUK-5V-R5W"/>
                         </constraints>
                     </view>
@@ -77,7 +77,7 @@
             <objects>
                 <tableViewController title="USB" id="yW8-I1-YvJ" customClass="USBConnectionTableViewController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3ad-Gf-ikg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -96,7 +96,9 @@
                             <outlet property="delegate" destination="yW8-I1-YvJ" id="kbu-Jt-PRY"/>
                         </connections>
                     </tableView>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="USB" image="usbIcon" id="YWX-m0-shb"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="3ad-Gf-ikg" id="2Sv-i7-arw"/>
                     </connections>
