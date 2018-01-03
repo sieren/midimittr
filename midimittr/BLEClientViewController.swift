@@ -10,7 +10,10 @@ class BLEClientViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.addChildViewController(bleClientVC)
-    bleClientVC.view.frame = view.frame
+    if let rect = self.navigationController?.navigationBar.frame {
+      let y = rect.size.height + rect.origin.y
+      bleClientVC.view.frame =  view.frame.offsetBy(dx: 0, dy: y)
+    }
     view.addSubview(bleClientVC.view)
     bleClientVC.didMove(toParentViewController: self)
   }
