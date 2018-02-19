@@ -18,12 +18,6 @@ class USBConnectionTableViewController: UITableViewController {
     super.viewWillAppear(animated)
     let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
     cell?.textLabel?.text = peerTalkBridge.connectionState.description
-    if #available(iOS 11.0, *) { } else { // Fix missing Safe-Area on iOS < 11
-      if let rect = self.navigationController?.navigationBar.frame {
-        let y = rect.size.height + rect.origin.y
-        tableView.contentInset = UIEdgeInsets(top: y, left: 0, bottom: 0, right: 0)
-      }
-    }
   }
 
   override func numberOfSections(in tableView: UITableView) -> Int {
