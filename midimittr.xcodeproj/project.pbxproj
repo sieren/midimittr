@@ -21,6 +21,7 @@
 		6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480E19DD804200A6E65C /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955AA321FF8076500224667 /* Peertalk.framework */; };
+		69606914216114C2007ABC57 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69606913216114C2007ABC57 /* Intents.framework */; };
 		699BDC641FF54BA200C7057D /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */; };
 		699BDC651FF54BA200C7057D /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC631FF54BA200C7057D /* MarqueeLabel.framework */; };
 		699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC661FF54BF800C7057D /* NotificationBanner.framework */; };
@@ -73,6 +74,8 @@
 		6949480E19DD804200A6E65C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		6955AA321FF8076500224667 /* Peertalk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Peertalk.framework; path = Carthage/Build/iOS/Peertalk.framework; sourceTree = "<group>"; };
 		6960690121610B8D007ABC57 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		696069122161147B007ABC57 /* midimittr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = midimittr.entitlements; sourceTree = "<group>"; };
+		69606913216114C2007ABC57 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabelSwift.framework; path = Carthage/Build/iOS/MarqueeLabelSwift.framework; sourceTree = "<group>"; };
 		699BDC631FF54BA200C7057D /* MarqueeLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabel.framework; path = Carthage/Build/iOS/MarqueeLabel.framework; sourceTree = "<group>"; };
 		699BDC661FF54BF800C7057D /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Carthage/Build/iOS/NotificationBanner.framework; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69606914216114C2007ABC57 /* Intents.framework in Frameworks */,
 				6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */,
 				699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */,
 				699BDC691FF54BF800C7057D /* SnapKit.framework in Frameworks */,
@@ -146,6 +150,7 @@
 		694947DE19DD7A4E00A6E65C /* midimittr */ = {
 			isa = PBXGroup;
 			children = (
+				696069122161147B007ABC57 /* midimittr.entitlements */,
 				69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */,
 				69A79E881FF6686B00A367A4 /* AppContext.swift */,
 				693D9EAF1FF425EF005E899C /* NavController.swift */,
@@ -201,6 +206,7 @@
 		699BDC611FF54BA100C7057D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69606913216114C2007ABC57 /* Intents.framework */,
 				6955AA321FF8076500224667 /* Peertalk.framework */,
 				699BDC661FF54BF800C7057D /* NotificationBanner.framework */,
 				699BDC671FF54BF800C7057D /* SnapKit.framework */,
@@ -268,7 +274,7 @@
 								enabled = 1;
 							};
 							com.apple.Siri = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -494,6 +500,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_ENTITLEMENTS = midimittr/midimittr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = YES;
@@ -527,6 +534,7 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				CODE_SIGN_ENTITLEMENTS = midimittr/midimittr.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_NS_ASSERTIONS = YES;

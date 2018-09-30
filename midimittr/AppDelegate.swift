@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
   // MARK: App Settings
 
   func registerSettingsBundle() {
-    let appDefaults = ["backgroundaudio": true, "usbconnectivity": true]
+    let appDefaults = ["backgroundaudio": true, "usbconnectivity": true, "siriButtonActive": true]
     UserDefaults.standard.register(defaults: appDefaults)
   }
 
