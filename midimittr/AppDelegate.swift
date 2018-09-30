@@ -24,6 +24,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
     return true
   }
 
+  func application(_ application: UIApplication, continue userActivity: NSUserActivity,
+                   restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+    //swiftlint:disable:next force_cast
+    let root = self.window!.rootViewController as! NavController
+    root.appContext = appContext
+    switch userActivity.activityType {
+    case "com.matt.MIDI-LE.advertise":
+      root.tabController.selectedIndex = 1
+    case "com.matt.MIDI-LE.clients":
+      root.tabController.selectedIndex = 2
+    default:
+      break
+    }
+    return true
+  }
+
   @available(iOS 9.0, *)
   func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem,
                    completionHandler: @escaping (Bool) -> Void) {

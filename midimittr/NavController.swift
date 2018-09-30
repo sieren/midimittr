@@ -7,11 +7,11 @@ class NavController: UINavigationController {
   var appContext: AppContext!
   var titleLabel: UILabel!
   var activityTimer: Timer?
+  var tabController: TabController!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    //swiftlint:disable:next force_cast
-    let tabController = self.viewControllers[0] as! TabController
+    tabController = self.viewControllers[0] as? TabController
     tabController.appContext = appContext
     let attributeThin = [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18, weight: .light) ]
     let attributeBold = [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18, weight: .bold) ]

@@ -32,6 +32,11 @@
 	<true/>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Bluetooth will be used to connect to other Bluetooth MIDI devices.</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>com.matt.MIDI-LE.advertise</string>
+		<string>com.matt.MIDI-LE.clients</string>
+	</array>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
