@@ -9,10 +9,8 @@ class BLEAdvertViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.addChildViewController(bleVC)
     bleVC.view.frame = self.view.frame
     view.addSubview(bleVC.view)
-    bleVC.didMove(toParentViewController: self)
   }
 
   override func viewWillAppear(_ animated: Bool) {
