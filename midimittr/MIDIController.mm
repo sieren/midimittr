@@ -7,6 +7,7 @@
 #import "PGMidi.h"
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#include <mach/mach_time.h>
 
 id thisClass;
 @interface MIDIController() <PGMidiDelegate, PGMidiSourceDelegate> {
@@ -107,7 +108,8 @@ id thisClass;
     MIDIPacketList* pktList = (MIDIPacketList*) pktBuffer;
     MIDIPacket     *pkt;
     pkt = MIDIPacketListInit(pktList);
-    pkt = MIDIPacketListAdd(pktList, 2048, pkt, 0, packet->length, packet->data);
+    MIDITimeStamp timeStamp = mach_absolute_time();
+    pkt = MIDIPacketListAdd(pktList, 2048, pkt, timeStamp, packet->length, packet->data);
     if (pkt == NULL || MIDIReceived(midiOut, pktList)) {
       NSAssert(true, @"Failed to send MIDI");
     }
@@ -209,7 +211,7 @@ NSString *getDisplayName(MIDIObjectRef object) {
             MIDIPacketList* pktList = (MIDIPacketList*) pktBuffer;
             MIDIPacket *pkt;
             pkt = MIDIPacketListInit(pktList);
-            pkt = MIDIPacketListAdd(pktList, 1024, pkt, 0, packet->length, packet->data);
+            pkt = MIDIPacketListAdd(pktList, 1024, pkt, packet->timeStamp, packet->length, packet->data);
             [dest sendPacketList:pktList];
             packet = MIDIPacketNext(packet);
           }
