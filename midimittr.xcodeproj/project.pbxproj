@@ -36,6 +36,9 @@
 		69B8BA0D19DD8FEF00AB03A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		69B8BA0E19DD8FEF00AB03A2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		69B8BA1019DD99C900AB03A2 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69B8BA0F19DD99C900AB03A2 /* silence.mp3 */; };
+		69D5406B232B92660005BAC4 /* TabBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5406A232B92660005BAC4 /* TabBarExtensions.swift */; };
+		69D5406D232B941C0005BAC4 /* NavControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5406C232B941C0005BAC4 /* NavControllerExtensions.swift */; };
+		69D5406F232B94A80005BAC4 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5406E232B94A80005BAC4 /* UIColorExtensions.swift */; };
 		69E7A6EA1FF40FD40083EBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,9 @@
 		69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		69B8BA0F19DD99C900AB03A2 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
 		69CC1D7E1A7B8C4F0054097D /* PTMidimittrProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMidimittrProtocol.h; sourceTree = "<group>"; };
+		69D5406A232B92660005BAC4 /* TabBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtensions.swift; sourceTree = "<group>"; };
+		69D5406C232B941C0005BAC4 /* NavControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavControllerExtensions.swift; sourceTree = "<group>"; };
+		69D5406E232B94A80005BAC4 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		69E7A6E81FF40FD30083EBEE /* midimittr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "midimittr-Bridging-Header.h"; sourceTree = "<group>"; };
 		69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,7 +141,10 @@
 				69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */,
 				69A79E881FF6686B00A367A4 /* AppContext.swift */,
 				693D9EAF1FF425EF005E899C /* NavController.swift */,
+				69D5406C232B941C0005BAC4 /* NavControllerExtensions.swift */,
 				693D9EB61FF43E10005E899C /* TabController.swift */,
+				69D5406A232B92660005BAC4 /* TabBarExtensions.swift */,
+				69D5406E232B94A80005BAC4 /* UIColorExtensions.swift */,
 				693D9EB41FF42D35005E899C /* MIDIPortsViewController.swift */,
 				69A79E901FF66DA100A367A4 /* USBConnectionTableViewController.swift */,
 				69A79E821FF64FE100A367A4 /* Settings.bundle */,
@@ -328,11 +337,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				693D9EB31FF4267F005E899C /* PeerTalkBridge.m in Sources */,
+				69D5406D232B941C0005BAC4 /* NavControllerExtensions.swift in Sources */,
 				69A79E891FF6686B00A367A4 /* AppContext.swift in Sources */,
 				69AC2C0F19E015D100212353 /* MIDIController.mm in Sources */,
 				69E7A6EA1FF40FD40083EBEE /* AppDelegate.swift in Sources */,
 				693D9EB51FF42D35005E899C /* MIDIPortsViewController.swift in Sources */,
 				693D9EBB1FF446B4005E899C /* BLEClientViewController.swift in Sources */,
+				69D5406B232B92660005BAC4 /* TabBarExtensions.swift in Sources */,
+				69D5406F232B94A80005BAC4 /* UIColorExtensions.swift in Sources */,
 				699BDC6E1FF55D7E00C7057D /* MIDIPortTableCell.swift in Sources */,
 				69A79E911FF66DA100A367A4 /* USBConnectionTableViewController.swift in Sources */,
 				693D9EB01FF425EF005E899C /* NavController.swift in Sources */,
