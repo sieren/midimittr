@@ -1,5 +1,5 @@
 
-osx_image: xcode10
+osx_image: xcode11
 language: objective-c
 # cache: cocoapods
 # podfile: Example/Podfile
@@ -8,4 +8,4 @@ language: objective-c
 # - pod install --project-directory=Example
 script:
 - carthage update
-- set -o pipefail && xcodebuild -project "midimittr.xcodeproj" -target "midimittr" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- set -o pipefail && xcodebuild -project "midimittr.xcodeproj" -target "midimittr" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
