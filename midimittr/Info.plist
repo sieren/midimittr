@@ -30,6 +30,8 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>midimittr needs to access Bluetooth in the background to maintain connection to MIDI Devices.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Bluetooth will be used to connect to other Bluetooth MIDI devices.</string>
 	<key>UIApplicationShortcutItems</key>
