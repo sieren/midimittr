@@ -1,20 +1,19 @@
 //  Copyright © 2017 Sieren. All rights reserved.
 
 import UIKit
-import NotificationBanner
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtocol {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-  var banner: NotificationBanner?
+  var notificationDisplay = ScreenNotifications()
   var appContext = AppContext()
   let appDefaults = [String: AnyObject]()
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     registerSettingsBundle()
-    appContext.peerTalkBridge.connectionViewDelegate = self
+    appContext.peerTalkBridge.connectionViewDelegate = notificationDisplay
     //swiftlint:disable:next force_cast
     let root = self.window!.rootViewController as! NavController
     root.appContext = appContext
@@ -43,20 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
 
   func applicationDidBecomeActive(_ application: UIApplication) {
     appContext.peerTalkBridge.checkAndRestartNetwork()
-  }
-
-  // MARK: Status Bar Notification
-
-  func didConnectToUSB() {
-    banner?.dismiss()
-    banner = NotificationBanner(title: "USB Connection", subtitle: "Device connected.", style: .success)
-    banner?.show()
-  }
-
-  func didDisconnectFromUSB() {
-    banner?.dismiss()
-    banner = NotificationBanner(title: "USB Connection", subtitle: "Device disconnected.", style: .warning)
-    banner?.show()
   }
 
   // MARK: App Settings
