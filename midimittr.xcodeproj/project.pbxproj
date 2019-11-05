@@ -48,6 +48,55 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		69C0896523720EAB00162634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A88FA30150D613800FC3647;
+			remoteInfo = peertalk;
+		};
+		69C0896723720EAB00162634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A88FA44150D613800FC3647;
+			remoteInfo = peertalkTests;
+		};
+		69C0896923720EAB00162634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A64AAC6152604D40065BF86;
+			remoteInfo = "Peertalk Example";
+		};
+		69C0896B23720EAB00162634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6A64AAE21526050D0065BF86;
+			remoteInfo = "Peertalk iOS Example";
+		};
+		69C0896D23720EAB00162634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE158A5B1CBD3EB600A3E3F0;
+			remoteInfo = Peertalk;
+		};
+		69C0896F23720EAB00162634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE158A681CBD3ED700A3E3F0;
+			remoteInfo = "Peertalk iOS";
+		};
+		69C0897323720EB500162634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE158A671CBD3ED700A3E3F0;
+			remoteInfo = "Peertalk iOS";
+		};
 		69E237F0233BE8AB00B60335 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 694947D419DD7A4E00A6E65C /* Project object */;
@@ -113,6 +162,7 @@
 		69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		69B8BA0F19DD99C900AB03A2 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		69C0895C23720EAB00162634 /* peertalk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = peertalk.xcodeproj; path = peertalk/peertalk.xcodeproj; sourceTree = "<group>"; };
 		69CC1D7E1A7B8C4F0054097D /* PTMidimittrProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMidimittrProtocol.h; sourceTree = "<group>"; };
 		69D5406A232B92660005BAC4 /* TabBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtensions.swift; sourceTree = "<group>"; };
 		69D5406C232B941C0005BAC4 /* NavControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavControllerExtensions.swift; sourceTree = "<group>"; };
@@ -158,6 +208,7 @@
 		694947D319DD7A4E00A6E65C = {
 			isa = PBXGroup;
 			children = (
+				69C0895C23720EAB00162634 /* peertalk.xcodeproj */,
 				69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */,
 				69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */,
 				6949480E19DD804200A6E65C /* CoreMIDI.framework */,
@@ -266,6 +317,19 @@
 			path = PGMidi;
 			sourceTree = "<group>";
 		};
+		69C0895D23720EAB00162634 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69C0896623720EAB00162634 /* libpeertalk.a */,
+				69C0896823720EAB00162634 /* peertalkTests.xctest */,
+				69C0896A23720EAB00162634 /* Peertalk Example.app */,
+				69C0896C23720EAB00162634 /* Peertalk iOS Example.app */,
+				69C0896E23720EAB00162634 /* Peertalk.framework */,
+				69C0897023720EAB00162634 /* Peertalk.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		69E237E9233BE8AB00B60335 /* midimittr le */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +358,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				69C0897423720EB500162634 /* PBXTargetDependency */,
 				69E237F1233BE8AB00B60335 /* PBXTargetDependency */,
 			);
 			name = midimittr;
@@ -357,6 +422,12 @@
 			mainGroup = 694947D319DD7A4E00A6E65C;
 			productRefGroup = 694947DD19DD7A4E00A6E65C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 69C0895D23720EAB00162634 /* Products */;
+					ProjectRef = 69C0895C23720EAB00162634 /* peertalk.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				694947DB19DD7A4E00A6E65C /* midimittr */,
@@ -364,6 +435,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		69C0896623720EAB00162634 /* libpeertalk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpeertalk.a;
+			remoteRef = 69C0896523720EAB00162634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		69C0896823720EAB00162634 /* peertalkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = peertalkTests.xctest;
+			remoteRef = 69C0896723720EAB00162634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		69C0896A23720EAB00162634 /* Peertalk Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Peertalk Example.app";
+			remoteRef = 69C0896923720EAB00162634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		69C0896C23720EAB00162634 /* Peertalk iOS Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Peertalk iOS Example.app";
+			remoteRef = 69C0896B23720EAB00162634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		69C0896E23720EAB00162634 /* Peertalk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Peertalk.framework;
+			remoteRef = 69C0896D23720EAB00162634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		69C0897023720EAB00162634 /* Peertalk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Peertalk.framework;
+			remoteRef = 69C0896F23720EAB00162634 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		694947DA19DD7A4E00A6E65C /* Resources */ = {
@@ -402,7 +518,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		699BDC6C1FF54D0300C7057D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -414,13 +530,12 @@
 				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabelSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/NotificationBanner.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Peertalk.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -460,6 +575,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		69C0897423720EB500162634 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Peertalk iOS";
+			targetProxy = 69C0897323720EB500162634 /* PBXContainerItemProxy */;
+		};
 		69E237F1233BE8AB00B60335 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 69E237E6233BE8AB00B60335 /* midimittr le */;
