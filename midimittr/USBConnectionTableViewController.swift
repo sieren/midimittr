@@ -43,16 +43,17 @@ class USBConnectionTableViewController: UITableViewController {
   }
 
   override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-    return 44
+    return 88
   }
 
   override func tableView(_ tableView: UITableView, willDisplayFooterView view: UIView, forSection section: Int) {
     //swiftlint:disable:next force_cast
     let footer = view as! UITableViewHeaderFooterView
-    let footerText = "TO USE MIDI OVER LIGHTNING CABLE, GET THE MIDIMITTR DESKTOP APP FROM S-R-N.DE/MIDIMITTR"
+    let footerText = "TO USE MIDI OVER LIGHTNING CABLE, GET THE MIDIMITTR DESKTOP APP FROM S-R-N.DE/MIDIMITTR. \n\n" +
+      "MACOS 10.13+ USERS CAN ALSO USE INTER-DEVICE AUDIO & MIDI (IDAM) INSTEAD OF USING THIS APP"
     let footerAttrText = NSMutableAttributedString(string: footerText)
     footerAttrText.addAttribute(.link, value: "http://www.s-r-n.de/midimittr", range: NSRange(location: 68, length: 19))
-    let textView = UITextView(frame: footer.contentView.frame)
+    let textView = UITextView()
     textView.textContainerInset = UIEdgeInsets(top: 15, left: 15, bottom: 0, right: 0)
     textView.translatesAutoresizingMaskIntoConstraints = false
     textView.isEditable = false
@@ -64,7 +65,7 @@ class USBConnectionTableViewController: UITableViewController {
     let horizontalConstraint = textView.centerXAnchor.constraint(equalTo: footer.contentView.centerXAnchor)
     let verticalConstraint = textView.centerYAnchor.constraint(equalTo: footer.contentView.centerYAnchor)
     let widthConstraint = textView.widthAnchor.constraint(equalTo: footer.contentView.widthAnchor)
-    let heightConstraint = textView.heightAnchor.constraint(equalToConstant: 44)
+    let heightConstraint = textView.heightAnchor.constraint(equalToConstant: 88)
     NSLayoutConstraint.activate([widthConstraint, horizontalConstraint, verticalConstraint, heightConstraint])
   }
 
