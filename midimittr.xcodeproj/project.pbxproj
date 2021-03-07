@@ -22,10 +22,6 @@
 		6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480E19DD804200A6E65C /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955AA321FF8076500224667 /* Peertalk.framework */; };
 		695B546E25F4F27A004CAA44 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 695B546D25F4F27A004CAA44 /* NotificationBannerSwift */; };
-		699BDC641FF54BA200C7057D /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */; };
-		699BDC651FF54BA200C7057D /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC631FF54BA200C7057D /* MarqueeLabel.framework */; };
-		699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC661FF54BF800C7057D /* NotificationBanner.framework */; };
-		699BDC691FF54BF800C7057D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC671FF54BF800C7057D /* SnapKit.framework */; };
 		699BDC6E1FF55D7E00C7057D /* MIDIPortTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699BDC6D1FF55D7E00C7057D /* MIDIPortTableCell.swift */; };
 		69A79E831FF64FE100A367A4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69A79E821FF64FE100A367A4 /* Settings.bundle */; };
 		69A79E891FF6686B00A367A4 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A79E881FF6686B00A367A4 /* AppContext.swift */; };
@@ -134,10 +130,6 @@
 			files = (
 				6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */,
 				695B546E25F4F27A004CAA44 /* NotificationBannerSwift in Frameworks */,
-				699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */,
-				699BDC691FF54BF800C7057D /* SnapKit.framework in Frameworks */,
-				699BDC641FF54BA200C7057D /* MarqueeLabelSwift.framework in Frameworks */,
-				699BDC651FF54BA200C7057D /* MarqueeLabel.framework in Frameworks */,
 				69B8BA0E19DD8FEF00AB03A2 /* AVKit.framework in Frameworks */,
 				69B8BA0D19DD8FEF00AB03A2 /* AVFoundation.framework in Frameworks */,
 				6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */,
@@ -410,7 +402,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		699BDC6C1FF54D0300C7057D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -418,17 +410,13 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabel.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/MarqueeLabelSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/NotificationBanner.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Peertalk.framework",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
