@@ -1,7 +1,7 @@
 //  Copyright © 2017 Sieren. All rights reserved.
 
 import UIKit
-import NotificationBanner
+import NotificationBannerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtocol {

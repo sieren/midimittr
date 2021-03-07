@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480E19DD804200A6E65C /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955AA321FF8076500224667 /* Peertalk.framework */; };
+		695B546E25F4F27A004CAA44 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 695B546D25F4F27A004CAA44 /* NotificationBannerSwift */; };
 		699BDC641FF54BA200C7057D /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */; };
 		699BDC651FF54BA200C7057D /* MarqueeLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC631FF54BA200C7057D /* MarqueeLabel.framework */; };
 		699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699BDC661FF54BF800C7057D /* NotificationBanner.framework */; };
@@ -132,6 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */,
+				695B546E25F4F27A004CAA44 /* NotificationBannerSwift in Frameworks */,
 				699BDC681FF54BF800C7057D /* NotificationBanner.framework in Frameworks */,
 				699BDC691FF54BF800C7057D /* SnapKit.framework in Frameworks */,
 				699BDC641FF54BA200C7057D /* MarqueeLabelSwift.framework in Frameworks */,
@@ -297,6 +299,9 @@
 				69E237F1233BE8AB00B60335 /* PBXTargetDependency */,
 			);
 			name = midimittr;
+			packageProductDependencies = (
+				695B546D25F4F27A004CAA44 /* NotificationBannerSwift */,
+			);
 			productName = "MIDI LE";
 			productReference = 694947DC19DD7A4E00A6E65C /* midimittr.app */;
 			productType = "com.apple.product-type.application";
@@ -355,6 +360,9 @@
 				Base,
 			);
 			mainGroup = 694947D319DD7A4E00A6E65C;
+			packageReferences = (
+				695B546C25F4F27A004CAA44 /* XCRemoteSwiftPackageReference "NotificationBanner" */,
+			);
 			productRefGroup = 694947DD19DD7A4E00A6E65C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -586,7 +594,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -617,7 +626,10 @@
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/midimittr/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 2.0.11;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
@@ -653,7 +665,10 @@
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/midimittr/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 2.0.11;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
@@ -687,7 +702,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "midimittr le/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 2.0.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -725,7 +744,11 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "midimittr le/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
 				MARKETING_VERSION = 2.0.11;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE.midimittr-le";
@@ -767,6 +790,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		695B546C25F4F27A004CAA44 /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Daltron/NotificationBanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		695B546D25F4F27A004CAA44 /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 695B546C25F4F27A004CAA44 /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 694947D419DD7A4E00A6E65C /* Project object */;
 }
