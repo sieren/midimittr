@@ -7,5 +7,5 @@ language: objective-c
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-- carthage update
+- carthage update --cache-builds --use-xcframeworks
 - set -o pipefail && xcodebuild -project "midimittr.xcodeproj" -target "midimittr" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
