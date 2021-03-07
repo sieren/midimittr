@@ -17,10 +17,9 @@
 		693D9EB91FF443EA005E899C /* BLEAdvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EB81FF443EA005E899C /* BLEAdvertViewController.swift */; };
 		693D9EBB1FF446B4005E899C /* BLEClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693D9EBA1FF446B4005E899C /* BLEClientViewController.swift */; };
 		694947F019DD7A4E00A6E65C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694947EF19DD7A4E00A6E65C /* Images.xcassets */; };
-		6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480819DD7A8900A6E65C /* CoreAudio.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480819DD7A8900A6E65C /* CoreAudio.framework */; };
 		6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480E19DD804200A6E65C /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6955AA321FF8076500224667 /* Peertalk.framework */; };
 		695B546E25F4F27A004CAA44 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 695B546D25F4F27A004CAA44 /* NotificationBannerSwift */; };
 		699BDC6E1FF55D7E00C7057D /* MIDIPortTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699BDC6D1FF55D7E00C7057D /* MIDIPortTableCell.swift */; };
 		69A79E831FF64FE100A367A4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69A79E821FF64FE100A367A4 /* Settings.bundle */; };
@@ -33,6 +32,7 @@
 		69B8BA0D19DD8FEF00AB03A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		69B8BA0E19DD8FEF00AB03A2 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		69B8BA1019DD99C900AB03A2 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69B8BA0F19DD99C900AB03A2 /* silence.mp3 */; };
+		69BAE41525F5020600BCBEE9 /* Peertalk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BAE41425F5020600BCBEE9 /* Peertalk.xcframework */; };
 		69D5406B232B92660005BAC4 /* TabBarExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5406A232B92660005BAC4 /* TabBarExtensions.swift */; };
 		69D5406D232B941C0005BAC4 /* NavControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5406C232B941C0005BAC4 /* NavControllerExtensions.swift */; };
 		69D5406F232B94A80005BAC4 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5406E232B94A80005BAC4 /* UIColorExtensions.swift */; };
@@ -110,6 +110,7 @@
 		69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		69B8BA0F19DD99C900AB03A2 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		69BAE41425F5020600BCBEE9 /* Peertalk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Peertalk.xcframework; path = Carthage/Build/Peertalk.xcframework; sourceTree = "<group>"; };
 		69CC1D7E1A7B8C4F0054097D /* PTMidimittrProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTMidimittrProtocol.h; sourceTree = "<group>"; };
 		69D5406A232B92660005BAC4 /* TabBarExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarExtensions.swift; sourceTree = "<group>"; };
 		69D5406C232B941C0005BAC4 /* NavControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavControllerExtensions.swift; sourceTree = "<group>"; };
@@ -128,13 +129,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6955AA331FF8076500224667 /* Peertalk.framework in Frameworks */,
+				6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */,
 				695B546E25F4F27A004CAA44 /* NotificationBannerSwift in Frameworks */,
 				69B8BA0E19DD8FEF00AB03A2 /* AVKit.framework in Frameworks */,
 				69B8BA0D19DD8FEF00AB03A2 /* AVFoundation.framework in Frameworks */,
 				6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */,
+				69BAE41525F5020600BCBEE9 /* Peertalk.xcframework in Frameworks */,
 				6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */,
-				6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +236,7 @@
 		699BDC611FF54BA100C7057D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69BAE41425F5020600BCBEE9 /* Peertalk.xcframework */,
 				6955AA321FF8076500224667 /* Peertalk.framework */,
 				699BDC661FF54BF800C7057D /* NotificationBanner.framework */,
 				699BDC671FF54BF800C7057D /* SnapKit.framework */,
@@ -281,7 +283,6 @@
 				694947D819DD7A4E00A6E65C /* Sources */,
 				694947D919DD7A4E00A6E65C /* Frameworks */,
 				694947DA19DD7A4E00A6E65C /* Resources */,
-				699BDC6C1FF54D0300C7057D /* ShellScript */,
 				6955AA381FF83A6C00224667 /* ShellScript */,
 				69305DF6233BE52A009F7009 /* Embed App Extensions */,
 			);
@@ -403,20 +404,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		699BDC6C1FF54D0300C7057D /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Peertalk.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
