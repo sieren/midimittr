@@ -603,7 +603,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 60;
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -618,7 +618,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.11;
+				MARKETING_VERSION = 2.0.2;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -642,7 +642,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 58;
+				CURRENT_PROJECT_VERSION = 60;
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -657,7 +657,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.11;
+				MARKETING_VERSION = 2.0.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
