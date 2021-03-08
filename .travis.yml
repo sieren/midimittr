@@ -8,4 +8,5 @@ language: objective-c
 # - pod install --project-directory=Example
 script:
 - carthage update --cache-builds --use-xcframeworks
-- set -o pipefail && xcodebuild -project "midimittr.xcodeproj" -target "midimittr" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+- set -o pipefail && xcodebuild -project "midimittr.xcodeproj" -scheme "midimittr" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+
