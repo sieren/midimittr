@@ -5,6 +5,7 @@
 #include <assert.h>
 #include <mach/mach.h>
 #include <mach/mach_time.h>
+#import <Peertalk/peertalk.h>
 #include <unistd.h>
 #import "MIDIController.h"
 
@@ -126,9 +127,9 @@
 
 
 // Invoked when a new frame has arrived on a channel.
-- (void)ioFrameChannel:(PTChannel*)channel didReceiveFrameOfType:(uint32_t)type tag:(uint32_t)tag payload:(PTData*)payload {
+- (void)ioFrameChannel:(PTChannel*)channel didReceiveFrameOfType:(uint32_t)type tag:(uint32_t)tag payload:(NSData *)payload {
   if (type == PTMidimittrFrameTypeTextMessage) {
-    PTMidimittrTextFrame *textFrame = (PTMidimittrTextFrame*)payload.data;
+    PTMidimittrTextFrame *textFrame = (PTMidimittrTextFrame*)payload.bytes;
     textFrame->length = ntohl(textFrame->length);
     uint8_t *text = textFrame->utf8text;
     struct MIDIPacket packet;

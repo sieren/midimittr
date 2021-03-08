@@ -252,7 +252,8 @@ NSString *getDisplayName(MIDIObjectRef object) {
 
     if (peerChannel_) {
       dispatch_data_t payload = PTMidimittrTextDispatchDataWithBytes(data, size);
-      [peerChannel_ sendFrameOfType:PTMidimittrFrameTypeTextMessage tag:PTFrameNoTag withPayload:payload callback:^(NSError *error) {
+      [peerChannel_ sendFrameOfType:PTMidimittrFrameTypeTextMessage tag:PTFrameNoTag withPayload:(NSData *
+)payload callback:^(NSError *error) {
         if (error) {
           NSLog(@"Failed to send message: %@", error);
         }

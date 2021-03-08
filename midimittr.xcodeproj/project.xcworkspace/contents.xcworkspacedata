@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/sierenmusic/Development/midimittr_ios/midimittr.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

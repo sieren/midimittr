@@ -113,8 +113,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "175"
             endingLineNumber = "175"
-            landmarkName = "-setMidiPortsDelegate:"
-            landmarkType = "7">
+            landmarkName = "MIDIController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
