@@ -77,7 +77,7 @@ class MIDIPortsViewController: UIViewController, UITableViewDelegate,
 
     //swiftlint:disable:next force_cast
     let cell = (tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! MIDIPortTableCell)
-    cell.textLabel?.text = portName
+    cell.midiLabel?.text = portName
     cell.midiSwitch.isOn = isOn
     cell.delegate = self
 

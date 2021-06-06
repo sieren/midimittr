@@ -10,6 +10,7 @@ class MIDIPortTableCell: UITableViewCell {
 
   weak var delegate: MIDIPortCellDelegate?
   @IBOutlet weak var midiSwitch: UISwitch!
+  @IBOutlet weak var midiLabel: UILabel!
 
   override func setSelected(_ selected: Bool, animated: Bool) {
       super.setSelected(selected, animated: animated)
