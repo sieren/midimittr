@@ -31,7 +31,7 @@ class TabController: UITabBarController {
   }
 
   @objc func openSettings() {
-    UIApplication.shared.openURL(URL(string: UIApplicationOpenSettingsURLString)!)
+    UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
   }
 
   @objc func openWebPage() {
@@ -39,7 +39,7 @@ class TabController: UITabBarController {
     let alert = UIAlertController(title: "midiMittr Website",
                                   message: "Open midiMittr Website?", preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (_) in
-      UIApplication.shared.openURL(url)
+      UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }))
     alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
     present(alert, animated: false, completion: nil)
