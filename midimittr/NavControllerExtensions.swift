@@ -17,10 +17,12 @@ extension UINavigationController {
     if #available(iOS 12.0, *) {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
+          self.view.backgroundColor = UIColor.DarkColors.backgroundColor
           self.navigationBar.tintColor = UIColor.DarkColors.tintColor
           self.self.navigationBar.backgroundColor = UIColor.DarkColors.backgroundColor
         }
         if userInterfaceStyle == .light {
+          self.view.backgroundColor = UIColor.LightColors.backgroundColor
           self.navigationBar.tintColor = UIColor.LightColors.tintColor
           self.self.navigationBar.backgroundColor = UIColor.LightColors.backgroundColor
         }
