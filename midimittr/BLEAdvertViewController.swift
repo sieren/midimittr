@@ -3,18 +3,17 @@
 import UIKit
 import CoreAudioKit
 
-class BLEAdvertViewController: UIViewController {
+class BLEAdvertViewController: CABTMIDILocalPeripheralViewController {
 
-  private var bleVC = CABTMIDILocalPeripheralViewController()
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    bleVC.view.frame = self.view.frame
-    view.addSubview(bleVC.view)
-  }
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+//    for subView in view.subviews {
+//      subView.removeFromSuperview()
+//    }
+//    var bleVC = CABTMIDILocalPeripheralViewController()
+ //   bleVC.view.frame = self.view.frame
+//    view.addSubview(bleVC.view)
     self.navigationController!.navigationBar.topItem?.title = "Bluetooth Advertising"
   }
 }

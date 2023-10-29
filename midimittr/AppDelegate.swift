@@ -2,6 +2,7 @@
 
 import UIKit
 import NotificationBannerSwift
+import CoreAudioKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtocol {
@@ -12,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
   let appDefaults = [String: AnyObject]()
 
   func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     registerSettingsBundle()
     appContext.peerTalkBridge.connectionViewDelegate = self
     //swiftlint:disable:next force_cast
@@ -31,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
     let root = self.window?.rootViewController as! NavController
     //swiftlint:disable:next force_cast
     let tabController = root.viewControllers[0] as! TabController
+    tabController.viewControllers![1] = CABTMIDILocalPeripheralViewController()
     switch shortcutItem.type {
     case "com.matt.midimittr.advertise":
       tabController.selectedIndex = 1

@@ -31,7 +31,7 @@ class TabController: UITabBarController {
   }
 
   @objc func openSettings() {
-    UIApplication.shared.open(URL(string: UIApplicationOpenSettingsURLString)!, options: [:], completionHandler: nil)
+    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
   }
 
   @objc func openWebPage() {

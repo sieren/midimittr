@@ -13,8 +13,8 @@ class NavController: UINavigationController {
     //swiftlint:disable:next force_cast
     let tabController = self.viewControllers[0] as! TabController
     tabController.appContext = appContext
-    let attributeThin = [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18, weight: .light) ]
-    let attributeBold = [ NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18, weight: .bold) ]
+    let attributeThin = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .light) ]
+    let attributeBold = [ NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .bold) ]
     let midiStr = NSMutableAttributedString(string: "midi", attributes: attributeThin)
     let mittrStr = NSAttributedString(string: "mittr", attributes: attributeBold)
     midiStr.append(mittrStr)
