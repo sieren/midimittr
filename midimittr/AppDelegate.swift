@@ -11,6 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
   var banner: NotificationBanner?
   var appContext = AppContext()
   let appDefaults = [String: AnyObject]()
+  var backgroundTask: UIBackgroundTaskIdentifier?
 
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -45,6 +46,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
 
   func applicationDidBecomeActive(_ application: UIApplication) {
     appContext.peerTalkBridge.checkAndRestartNetwork()
+  }
+
+  
+  func applicationDidEnterBackground(_ application: UIApplication) {
+    if backgroundTask != nil {
+        UIApplication.shared.endBackgroundTask(backgroundTask!)
+        backgroundTask = UIBackgroundTaskIdentifier.invalid
+    }
+    
+    backgroundTask = UIApplication.shared.beginBackgroundTask(expirationHandler: { () -> Void in
+        UIApplication.shared.endBackgroundTask(self.backgroundTask!)
+        self.backgroundTask = UIBackgroundTaskIdentifier.invalid
+    })
   }
 
   // MARK: Status Bar Notification
