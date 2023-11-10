@@ -12,9 +12,11 @@
 @interface MIDIController : NSObject<PeerTalkMidiProtocol> {
   PGMidi *midi;
   id midiPortsDelegate;
+  id activityViewDelegate;
 }
 
 -(void)setMidiPortsDelegate:(id)newDelegate;
+-(void)setActivityViewDelegate:(id)newDelegate;
 -(void)startBackgrounding;
 -(void)stopBackgrounding;
 -(void)saveSelection;

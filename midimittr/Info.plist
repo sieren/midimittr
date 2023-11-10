@@ -34,6 +34,8 @@
 	<string>midimittr needs to access Bluetooth in the background to maintain connection to MIDI Devices.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Bluetooth will be used to connect to other Bluetooth MIDI devices.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>

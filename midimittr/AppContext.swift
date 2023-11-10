@@ -2,13 +2,27 @@
 
 import Foundation
 
+
 class AppContext {
 
   var midiController: MIDIController!
   var peerTalkBridge: PeerTalkBridge!
+  private var _activityViewHandler: Any? = nil
+  @available(iOS 16.2, *)
+  fileprivate var activityViewHandler: ActivityViewHandler {
+      if _activityViewHandler == nil {
+        _activityViewHandler = ActivityViewHandler(midiController: self.midiController)
+      }
+      return _activityViewHandler as! ActivityViewHandler
+  }
 
   init() {
     self.midiController = MIDIController()
     self.peerTalkBridge = PeerTalkBridge(midiDelegate: self.midiController)
+    if #available(iOS 16.2, *) {
+      activityViewHandler.start()
+    } else {
+      // Fallback on earlier versions
+    }
   }
 }

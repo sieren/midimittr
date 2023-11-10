@@ -20,7 +20,19 @@
 		6949480A19DD7A8900A6E65C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480819DD7A8900A6E65C /* CoreAudio.framework */; };
 		6949480D19DD7A8E00A6E65C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6949480F19DD804200A6E65C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6949480E19DD804200A6E65C /* CoreMIDI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		6953EF122AF957E400113943 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6953EF112AF957E400113943 /* WidgetKit.framework */; };
+		6953EF142AF957E400113943 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6953EF132AF957E400113943 /* SwiftUI.framework */; };
+		6953EF172AF957E400113943 /* ActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953EF162AF957E400113943 /* ActivityBundle.swift */; };
+		6953EF192AF957E400113943 /* MIDILiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953EF182AF957E400113943 /* MIDILiveActivity.swift */; };
+		6953EF1D2AF957E500113943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6953EF1C2AF957E500113943 /* Assets.xcassets */; };
+		6953EF212AF957E500113943 /* midileactivityExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6953EF102AF957E400113943 /* midileactivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6953EF262AF9596F00113943 /* ActivityViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953EF252AF9596F00113943 /* ActivityViewHandler.swift */; };
+		6953EF282AF95CAA00113943 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953EF272AF95CAA00113943 /* ActivityAttributes.swift */; };
 		695B546E25F4F27A004CAA44 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 695B546D25F4F27A004CAA44 /* NotificationBannerSwift */; };
+		696972FE2AFE944B00CDC438 /* ActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6953EF272AF95CAA00113943 /* ActivityAttributes.swift */; };
+		696973022AFEB05D00CDC438 /* ReleaseConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 696973012AFEB05D00CDC438 /* ReleaseConfig.xcconfig */; };
+		696973032AFEB05D00CDC438 /* ReleaseConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 696973012AFEB05D00CDC438 /* ReleaseConfig.xcconfig */; };
+		69800AFB2AEE9275001F9860 /* SystemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69800AFA2AEE9275001F9860 /* SystemExtension.swift */; };
 		699BDC6E1FF55D7E00C7057D /* MIDIPortTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699BDC6D1FF55D7E00C7057D /* MIDIPortTableCell.swift */; };
 		69A79E831FF64FE100A367A4 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69A79E821FF64FE100A367A4 /* Settings.bundle */; };
 		69A79E891FF6686B00A367A4 /* AppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A79E881FF6686B00A367A4 /* AppContext.swift */; };
@@ -40,6 +52,16 @@
 		69E7A6EA1FF40FD40083EBEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6953EF1F2AF957E500113943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694947D419DD7A4E00A6E65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6953EF0F2AF957E400113943;
+			remoteInfo = midileactivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		69305DF6233BE52A009F7009 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -47,6 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				6953EF212AF957E500113943 /* midileactivityExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +107,18 @@
 		6949480819DD7A8900A6E65C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		6949480C19DD7A8E00A6E65C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		6949480E19DD804200A6E65C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		6953EF102AF957E400113943 /* midileactivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = midileactivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6953EF112AF957E400113943 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6953EF132AF957E400113943 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6953EF162AF957E400113943 /* ActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityBundle.swift; sourceTree = "<group>"; };
+		6953EF182AF957E400113943 /* MIDILiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDILiveActivity.swift; sourceTree = "<group>"; };
+		6953EF1C2AF957E500113943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6953EF1E2AF957E500113943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6953EF252AF9596F00113943 /* ActivityViewHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewHandler.swift; sourceTree = "<group>"; };
+		6953EF272AF95CAA00113943 /* ActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityAttributes.swift; sourceTree = "<group>"; };
 		6955AA321FF8076500224667 /* Peertalk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Peertalk.framework; path = Carthage/Build/iOS/Peertalk.framework; sourceTree = "<group>"; };
+		696973012AFEB05D00CDC438 /* ReleaseConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ReleaseConfig.xcconfig; sourceTree = "<group>"; };
+		69800AFA2AEE9275001F9860 /* SystemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemExtension.swift; sourceTree = "<group>"; };
 		699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabelSwift.framework; path = Carthage/Build/iOS/MarqueeLabelSwift.framework; sourceTree = "<group>"; };
 		699BDC631FF54BA200C7057D /* MarqueeLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabel.framework; path = Carthage/Build/iOS/MarqueeLabel.framework; sourceTree = "<group>"; };
 		699BDC661FF54BF800C7057D /* NotificationBanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationBanner.framework; path = Carthage/Build/iOS/NotificationBanner.framework; sourceTree = "<group>"; };
@@ -130,12 +164,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6953EF0D2AF957E400113943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6953EF142AF957E400113943 /* SwiftUI.framework in Frameworks */,
+				6953EF122AF957E400113943 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		694947D319DD7A4E00A6E65C = {
 			isa = PBXGroup;
 			children = (
+				696973012AFEB05D00CDC438 /* ReleaseConfig.xcconfig */,
 				69B8BA0B19DD8FEF00AB03A2 /* AVFoundation.framework */,
 				69B8BA0C19DD8FEF00AB03A2 /* AVKit.framework */,
 				6949480E19DD804200A6E65C /* CoreMIDI.framework */,
@@ -143,6 +187,7 @@
 				6949480819DD7A8900A6E65C /* CoreAudio.framework */,
 				694947DE19DD7A4E00A6E65C /* midimittr */,
 				694947FB19DD7A4E00A6E65C /* midimittrTests */,
+				6953EF152AF957E400113943 /* midileactivity */,
 				694947DD19DD7A4E00A6E65C /* Products */,
 				699BDC611FF54BA100C7057D /* Frameworks */,
 			);
@@ -152,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				694947DC19DD7A4E00A6E65C /* midimittr.app */,
+				6953EF102AF957E400113943 /* midileactivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +207,8 @@
 			children = (
 				69E7A6E91FF40FD40083EBEE /* AppDelegate.swift */,
 				69A79E881FF6686B00A367A4 /* AppContext.swift */,
+				6953EF252AF9596F00113943 /* ActivityViewHandler.swift */,
+				6953EF272AF95CAA00113943 /* ActivityAttributes.swift */,
 				693D9EAF1FF425EF005E899C /* NavController.swift */,
 				69D5406C232B941C0005BAC4 /* NavControllerExtensions.swift */,
 				693D9EB61FF43E10005E899C /* TabController.swift */,
@@ -171,6 +219,7 @@
 				69A79E821FF64FE100A367A4 /* Settings.bundle */,
 				699BDC6D1FF55D7E00C7057D /* MIDIPortTableCell.swift */,
 				693D9EB81FF443EA005E899C /* BLEAdvertViewController.swift */,
+				69800AFA2AEE9275001F9860 /* SystemExtension.swift */,
 				693D9EBA1FF446B4005E899C /* BLEClientViewController.swift */,
 				693D9EB11FF4267F005E899C /* PeerTalkBridge.h */,
 				693D9EB21FF4267F005E899C /* PeerTalkBridge.m */,
@@ -214,6 +263,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6953EF152AF957E400113943 /* midileactivity */ = {
+			isa = PBXGroup;
+			children = (
+				6953EF162AF957E400113943 /* ActivityBundle.swift */,
+				6953EF182AF957E400113943 /* MIDILiveActivity.swift */,
+				6953EF1C2AF957E500113943 /* Assets.xcassets */,
+				6953EF1E2AF957E500113943 /* Info.plist */,
+			);
+			path = midileactivity;
+			sourceTree = "<group>";
+		};
 		699BDC611FF54BA100C7057D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +284,8 @@
 				699BDC631FF54BA200C7057D /* MarqueeLabel.framework */,
 				699BDC621FF54BA200C7057D /* MarqueeLabelSwift.framework */,
 				69305DEA233BE52A009F7009 /* NotificationCenter.framework */,
+				6953EF112AF957E400113943 /* WidgetKit.framework */,
+				6953EF132AF957E400113943 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -260,6 +322,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6953EF202AF957E500113943 /* PBXTargetDependency */,
 			);
 			name = midimittr;
 			packageProductDependencies = (
@@ -269,13 +332,30 @@
 			productReference = 694947DC19DD7A4E00A6E65C /* midimittr.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6953EF0F2AF957E400113943 /* midileactivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6953EF242AF957E500113943 /* Build configuration list for PBXNativeTarget "midileactivityExtension" */;
+			buildPhases = (
+				6953EF0C2AF957E400113943 /* Sources */,
+				6953EF0D2AF957E400113943 /* Frameworks */,
+				6953EF0E2AF957E400113943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = midileactivityExtension;
+			productName = midileactivityExtension;
+			productReference = 6953EF102AF957E400113943 /* midileactivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		694947D419DD7A4E00A6E65C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Matthias Frick";
 				TargetAttributes = {
@@ -287,6 +367,9 @@
 								enabled = 1;
 							};
 						};
+					};
+					6953EF0F2AF957E400113943 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
@@ -307,6 +390,7 @@
 			projectRoot = "";
 			targets = (
 				694947DB19DD7A4E00A6E65C /* midimittr */,
+				6953EF0F2AF957E400113943 /* midileactivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -322,6 +406,16 @@
 				69B8BA1019DD99C900AB03A2 /* silence.mp3 in Resources */,
 				69A79E831FF64FE100A367A4 /* Settings.bundle in Resources */,
 				694947F019DD7A4E00A6E65C /* Images.xcassets in Resources */,
+				696973022AFEB05D00CDC438 /* ReleaseConfig.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6953EF0E2AF957E400113943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696973032AFEB05D00CDC438 /* ReleaseConfig.xcconfig in Resources */,
+				6953EF1D2AF957E500113943 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +445,8 @@
 				693D9EB31FF4267F005E899C /* PeerTalkBridge.m in Sources */,
 				69D5406D232B941C0005BAC4 /* NavControllerExtensions.swift in Sources */,
 				69A79E891FF6686B00A367A4 /* AppContext.swift in Sources */,
+				6953EF282AF95CAA00113943 /* ActivityAttributes.swift in Sources */,
+				6953EF262AF9596F00113943 /* ActivityViewHandler.swift in Sources */,
 				69AC2C0F19E015D100212353 /* MIDIController.mm in Sources */,
 				69E7A6EA1FF40FD40083EBEE /* AppDelegate.swift in Sources */,
 				693D9EB51FF42D35005E899C /* MIDIPortsViewController.swift in Sources */,
@@ -360,6 +456,7 @@
 				699BDC6E1FF55D7E00C7057D /* MIDIPortTableCell.swift in Sources */,
 				69A79E911FF66DA100A367A4 /* USBConnectionTableViewController.swift in Sources */,
 				693D9EB01FF425EF005E899C /* NavController.swift in Sources */,
+				69800AFB2AEE9275001F9860 /* SystemExtension.swift in Sources */,
 				693D9EB91FF443EA005E899C /* BLEAdvertViewController.swift in Sources */,
 				69B8BA0819DD85F000AB03A2 /* PGMidi.mm in Sources */,
 				693D9EB71FF43E10005E899C /* TabController.swift in Sources */,
@@ -368,7 +465,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6953EF0C2AF957E400113943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6953EF192AF957E400113943 /* MIDILiveActivity.swift in Sources */,
+				6953EF172AF957E400113943 /* ActivityBundle.swift in Sources */,
+				696972FE2AFE944B00CDC438 /* ActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6953EF202AF957E500113943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6953EF0F2AF957E400113943 /* midileactivityExtension */;
+			targetProxy = 6953EF1F2AF957E500113943 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		693D9EAC1FF424B9005E899C /* MainNew.storyboard */ = {
@@ -440,6 +555,7 @@
 		};
 		6949480119DD7A4E00A6E65C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696973012AFEB05D00CDC438 /* ReleaseConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
@@ -492,6 +608,7 @@
 		6949480319DD7A4E00A6E65C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
@@ -501,7 +618,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 66;
+				CURRENT_PROJECT_VERSION = 70;
 				DEVELOPMENT_TEAM = VEESE9857L;
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -512,12 +629,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/midimittr/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = midimittr;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.5;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,7 +649,9 @@
 		};
 		6949480419DD7A4E00A6E65C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696973012AFEB05D00CDC438 /* ReleaseConfig.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
@@ -540,7 +661,7 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 66;
+				CURRENT_PROJECT_VERSION = 70;
 				DEVELOPMENT_TEAM = VEESE9857L;
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -551,18 +672,121 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/midimittr/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = midimittr;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 2.5;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "midimittr/midimittr-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6953EF222AF957E500113943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 70;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = VEESE9857L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = midileactivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = midileactivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Matthias Frick. All rights reserved.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE.midileactivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6953EF232AF957E500113943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696973012AFEB05D00CDC438 /* ReleaseConfig.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 70;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = VEESE9857L;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = midileactivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = midileactivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Matthias Frick. All rights reserved.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 2.5;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matt.MIDI-LE.midileactivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -583,6 +807,15 @@
 			buildConfigurations = (
 				6949480319DD7A4E00A6E65C /* Debug */,
 				6949480419DD7A4E00A6E65C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6953EF242AF957E500113943 /* Build configuration list for PBXNativeTarget "midileactivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6953EF222AF957E500113943 /* Debug */,
+				6953EF232AF957E500113943 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
