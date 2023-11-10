@@ -172,11 +172,18 @@ void ReadProc(const MIDIPacketList *packetList, void *readProcRefCon, void *srcC
   [[AVAudioSession sharedInstance] setActive:NO error:&sessionError];
 }
 
+-(void)updateDelegates {
+  [midiPortsDelegate updateResources];
+  [activityViewDelegate updateResources];
+}
 
 -(void)setMidiPortsDelegate:(id)newDelegate {
   midiPortsDelegate = newDelegate;
 }
 
+-(void)setActivityViewDelegate:(id)newDelegate {
+  activityViewDelegate = newDelegate;
+}
 
 NSString *getDisplayName(MIDIObjectRef object) {
   // Returns the display name of a given MIDIObjectRef as an NSString
@@ -280,7 +287,7 @@ NSString *getDisplayName(MIDIObjectRef object) {
   if ([self.savedSources containsObject:source.name]) {
     [self.selectSources addObject:source];
   }
-  [midiPortsDelegate updateResources];
+  [self updateDelegates];
   [self logToConsole:[NSString stringWithFormat:@"Source added: %@", ToString(source)]];
 }
 
@@ -291,7 +298,7 @@ NSString *getDisplayName(MIDIObjectRef object) {
   if ([self.selectSources containsObject:source]) {
         [self.selectSources removeObject:source];
   }
-  [midiPortsDelegate updateResources];
+  [self updateDelegates];
   [self logToConsole:[NSString stringWithFormat:@"Source removed: %@", ToString(source)]];
 }
 
@@ -303,7 +310,7 @@ NSString *getDisplayName(MIDIObjectRef object) {
   if ([self.savedDestinations containsObject:destination.name]) {
     [self.selectDestinations addObject:destination];
   }
-  [midiPortsDelegate updateResources];
+  [self updateDelegates];
   [self logToConsole:[NSString stringWithFormat:@"Desintation added: %@", ToString(destination)]];
 }
 
@@ -314,7 +321,7 @@ NSString *getDisplayName(MIDIObjectRef object) {
   if ([self.selectDestinations containsObject:destination]) {
     [self.selectDestinations removeObject:destination];
   }
-  [midiPortsDelegate updateResources];
+  [self updateDelegates];
   [self logToConsole:[NSString stringWithFormat:@"Desintation removed: %@", ToString(destination)]];
 }
 
