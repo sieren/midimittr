@@ -52,6 +52,18 @@ public class ActivityViewHandler: MIDIControllerDelegate {
   public init(midiController: MIDIController) {
     self.midiController = midiController
     self.midiController.setActivityViewDelegate(self)
+
+    NotificationCenter.default.addObserver(forName: UIApplication.willTerminateNotification, object: nil, queue: .main) { _ in
+      guard let runningActivity = self.currentActivity else { return }
+      Task {
+        await runningActivity.end(dismissalPolicy: .immediate)
+      }
+      for activity in Activity<MIDIPortsAttributes>.activities {
+        Task {
+          await activity.end(dismissalPolicy: .immediate)
+        }
+      }
+    }
   }
 
   public func updateResources() {
@@ -60,7 +72,6 @@ public class ActivityViewHandler: MIDIControllerDelegate {
       return
     }
     guard let activity = currentActivity else { return }
-    let newState = contentState
     Task.detached { @MainActor in
       await activity.update(using: self.contentState)
     }
@@ -72,6 +83,11 @@ public class ActivityViewHandler: MIDIControllerDelegate {
     do {
       let connectionState = MIDIPortsAttributes()
       
+      for activity  in Activity<MIDIPortsAttributes>.activities {
+        Task {
+          await activity.end(dismissalPolicy: .immediate)
+        }
+      }
       let activity = try Activity.request(
         attributes: connectionState,
         content: .init(state: contentState, staleDate: nil)

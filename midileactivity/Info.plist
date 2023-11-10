@@ -6,6 +6,8 @@
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.widgetkit-extension</string>
+  	<key>CFBundleVersion</key>
+  	<string>69</string>
 	</dict>
 </dict>
 </plist>
