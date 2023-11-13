@@ -53,14 +53,22 @@ struct MIDILiveActivity: Widget {
             DynamicIslandExpandedRegion(.bottom) {
               HStack(alignment: .top) {
                 VStack(alignment: .leading) {
+                  if context.state.connectedSources.isEmpty {
+                    Spacer().frame(maxWidth: .infinity, alignment: .leading)
+                  }
                   ForEach(context.state.connectedSources.prefix(4), id: \.self) { source in
                     Text(source).font(.callout).frame(maxWidth: .infinity, alignment: .leading)
                   }
                 }.padding([.leading], 15)
+
                 VStack {
                   Image("activityIcon")
                 }.frame(maxHeight: .infinity)
+
                 VStack(alignment: .trailing) {
+                  if context.state.connectedTargets.isEmpty {
+                    Spacer().frame(maxWidth: .infinity, alignment: .leading)
+                  }
                   ForEach(context.state.connectedTargets.prefix(4), id: \.self) { name in
                     Text(name).font(.callout).frame(maxWidth: .infinity, alignment: .trailing)
                   }

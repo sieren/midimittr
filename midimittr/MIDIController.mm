@@ -57,6 +57,7 @@ id thisClass;
   else {
     self.savedDestinations = [NSMutableArray new];
   }
+  [self updateDelegates];
 }
 
 
@@ -74,6 +75,7 @@ id thisClass;
     [selectSources addObject:[sources objectAtIndex:indexPath.row]];
   }
   [self saveSelection];
+  [self updateDelegates];
 }
 
 
@@ -86,6 +88,7 @@ id thisClass;
     [selectDestinations addObject:[destinations objectAtIndex:indexPath.row]];
   }
   [self saveSelection];
+  [self updateDelegates];
 }
 
 
@@ -125,6 +128,7 @@ id thisClass;
     MIDIOutputPortCreate(theMidiClient, CFSTR("midimittr Out Port"),
       &outPort);
     MIDIDestinationCreate(theMidiClient, CFSTR("midimittr USB Destination"), ReadProc,  (__bridge void *)self, &midiIn);
+    [self updateDelegates];
 }
 
 
