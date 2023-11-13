@@ -113,7 +113,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "175"
             endingLineNumber = "175"
-            landmarkName = "-updateDelegates"
+            landmarkName = "-stopBackgrounding"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
