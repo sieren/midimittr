@@ -16,6 +16,12 @@ class AppContext {
       return _activityViewHandler as! ActivityViewHandler
   }
 
+  public func didBecomeActive() {
+    if #available(iOS 16.2, *) {
+      activityViewHandler.updateResources()
+    }
+  }
+
   init() {
     self.midiController = MIDIController()
     self.peerTalkBridge = PeerTalkBridge(midiDelegate: self.midiController)
