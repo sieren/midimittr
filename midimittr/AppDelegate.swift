@@ -46,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
 
   func applicationDidBecomeActive(_ application: UIApplication) {
     appContext.peerTalkBridge.checkAndRestartNetwork()
+    appContext.didBecomeActive()
   }
 
   

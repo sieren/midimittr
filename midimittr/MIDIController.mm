@@ -150,7 +150,7 @@ void ReadProc(const MIDIPacketList *packetList, void *readProcRefCon, void *srcC
 -(void)startBackgrounding {
   NSError *sessionError = nil;
   [[AVAudioSession sharedInstance] setActive:YES error:&sessionError];
-  [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient withOptions:AVAudioSessionCategoryOptionMixWithOthers error:&sessionError];
+  [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback withOptions:AVAudioSessionCategoryOptionMixWithOthers error:&sessionError];
   
   AVPlayerItem *item = [AVPlayerItem playerItemWithURL:[[NSBundle mainBundle] URLForResource:@"silence" withExtension:@"mp3"]];
   
