@@ -17,7 +17,7 @@ class AppContext {
   }
 
   public func didBecomeActive() {
-    if #available(iOS 16.2, *) {
+    if #available(iOS 16.2, *), !ProcessInfo.processInfo.isiOSAppOnMac {
       activityViewHandler.updateResources()
     }
   }
@@ -25,7 +25,7 @@ class AppContext {
   init() {
     self.midiController = MIDIController()
     self.peerTalkBridge = PeerTalkBridge(midiDelegate: self.midiController)
-    if #available(iOS 16.2, *) {
+    if #available(iOS 16.2, *), !ProcessInfo.processInfo.isiOSAppOnMac {
       activityViewHandler.start()
     } else {
       // Fallback on earlier versions
