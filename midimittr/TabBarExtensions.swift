@@ -25,11 +25,15 @@ extension UITabBarController {
         let userInterfaceStyle = traitCollection.userInterfaceStyle
         if userInterfaceStyle == .dark {
           self.tabBar.tintColor = UIColor.DarkColors.tintColor
-          self.tabBar.backgroundColor = UIColor.DarkColors.backgroundColor
+          if #available(iOS 26.0, *) { } else {
+            self.tabBar.backgroundColor = UIColor.DarkColors.backgroundColor
+          }
         }
         if userInterfaceStyle == .light {
           self.tabBar.tintColor = UIColor.LightColors.tintColor
-          self.tabBar.backgroundColor = UIColor.LightColors.backgroundColor
+          if #available(iOS 26.0, *) { } else {
+            self.tabBar.backgroundColor = UIColor.LightColors.backgroundColor
+          }
         }
     }
   }
