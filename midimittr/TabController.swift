@@ -28,6 +28,8 @@ class TabController: UITabBarController {
     //swiftlint:disable:next force_cast
     let usbVC = self.viewControllers![3] as! USBConnectionTableViewController
     usbVC.peerTalkBridge = appContext.peerTalkBridge
+    // Only the selected tab's view is loaded, so restore advertising explicitly.
+    (self.viewControllers![1] as? BLEAdvertViewController)?.restoreAdvertisingIfNeeded()
   }
 
   @objc func openSettings() {

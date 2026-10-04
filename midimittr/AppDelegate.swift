@@ -33,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PeerTalkConnectionProtoco
     let root = self.window?.rootViewController as! NavController
     //swiftlint:disable:next force_cast
     let tabController = root.viewControllers[0] as! TabController
-    tabController.viewControllers![1] = CABTMIDILocalPeripheralViewController()
     switch shortcutItem.type {
     case "com.matt.midimittr.advertise":
       tabController.selectedIndex = 1

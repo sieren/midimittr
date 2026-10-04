@@ -136,7 +136,7 @@
         <!--Advertising-->
         <scene sceneID="Q3q-2Y-tpF">
             <objects>
-                <viewController title="Advertising" id="MGW-dE-Ylo" customClass="CABTMIDILocalPeripheralViewController" sceneMemberID="viewController">
+                <viewController title="Advertising" id="MGW-dE-Ylo" customClass="BLEAdvertViewController" customModule="midimittr" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RUh-Km-0aY"/>
                         <viewControllerLayoutGuide type="bottom" id="brl-cJ-ULG"/>
